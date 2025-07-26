@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>View Signed-In Users</title>
+  <link rel="stylesheet" href="../css/view.css">
+    
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="/home" class="nav-btn">Home</a>
+    <a href="/form" class="nav-btn">Register</a>
+    <a href="/view" class="nav-btn active" title="View">View Users</a>
+  </div>
+
+  <div class="users-list">
+    <h1>Registered Users</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th> 
+          <th>Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% users.forEach(user => { %>
+          <tr>
+            <td><%= user.name %></td>
+            <td><%= user.email %></td>
+            <td><%= user.phone %></td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>

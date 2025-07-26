@@ -1,0 +1,213 @@
+
+form { background: #fff; padding: 24px; border-radius: 8px; max-width: 400px; margin: 40px auto; box-shadow: 0 2px 8px rgba(0,0,0,0.07);}
+label { font-weight: bold; margin-top: 12px; display: block; }
+input[type="text"], input[type="password"] { width: 100%; padding: 8px; margin: 6px 0 2px 0; border: 1px solid #ccc; border-radius: 4px; }
+.error { color: #d32f2f; font-size: 0.95em; min-height: 18px; display: block; }
+button { background: #1976d2; color: #fff; border: none; padding: 10px 18px; border-radius: 4px; font-size: 1em; cursor: pointer; margin-top: 16px;}
+button:hover { background: #1565c0; }
+h1 { text-align: center; color: #1976d2; }
+.navbar {
+  margin-bottom: 32px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 40px;
+}
+.nav-btn {
+  display: inline-block;
+  margin: 0 18px;
+  padding: 12px 32px;
+
+  color: #2d7cf2;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 1px 4px rgba(45,124,242,0.07);
+}
+.nav-btn:hover, .nav-btn.active {
+  background: #2d7cf2;
+  color: #fff;
+}
+.welcome {
+  background-image: url('cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAyL3Jhd3BpeGVsX29mZmljZV8yNF9zaW1wbGVfbWluaW1hbGlzdF9waG90b19vZl9tb3VudGFpbl9hbmRfbW9vbl9kNDY3ZDY5Ny1hNDhkLTQ1NGEtYjljNC02ZjQ0MmNhMTMxYzNfMS5qcGc.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 370px;
+  height: 814px;
+  margin: 0;
+ 
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+}
+.reg-container {
+  max-width: 470px;
+  min-width: 370px;
+  margin: 0;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+}
+.reg-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #222;
+}
+.reg-container label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+}
+.reg-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1em;
+  background: #f9f9f9;
+}
+.reg-container .error {
+  color: #e74c3c;
+  font-size: 0.9em;
+  margin-bottom: 8px;
+  display: block;
+  min-height: 18px;
+}
+.reg-container button {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+.reg-container button:hover {
+  background: #1741a3;
+}
+.main-flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0; /* Remove space between .welcome and .reg-container */
+  margin-top: 120px;
+}
+
+.welcome {
+  margin-right: 0; /* Ensure no margin between .welcome and .reg-container */
+  border-right: none; /* Remove border if you want them to visually touch */
+}
+
+.reg-container {
+  margin-left: 0; /* Ensure no margin between .reg-container and .welcome */
+}
+.welcome-text {
+  background: rgba(101, 98, 98, 0.45);
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin-bottom: 18px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+.welcome-text h1 {
+  color: #fff;
+  margin: 0;
+}
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #667eea, #764ba2);
+      color: #fff;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 15px;
+    }
+
+    .nav-btn {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 8px 16px;
+      border-radius: 25px;
+      transition: background 0.3s;
+    }
+
+    .nav-btn:hover,
+    .nav-btn.active {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .users-list {
+      margin: 50px auto;
+      max-width: 800px;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 15px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .users-list h1 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 32px;
+      color: #fff;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    th, td {
+      padding: 14px;
+      text-align: center;
+      color: #fff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    th {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    tr:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/validate.js"></script>
+</head>
+<body>   
+     <div class="navbar">
+        <a href="/home" class="nav-btn">Home</a>
+        <a href="/form" class="nav-btn active">Register</a>
+        <a href="/view" class="nav-btn" title="View">View Users</a>
+    </div>
+    <div class="main-flex">
+      <div class="welcome">
+        <div class="welcome-text">
+          <h1>Register Here</h1></div>
+          <p>Please fill out the form below to create an account.</p>
+      </div>
+      <div class="reg-container">
+        <h2>Registration</h2>  
+        <form id="registerForm" onsubmit="return validateForm(event)" action="/form" method="post">
+
+          <label for="name"  >Name</label>
+          <input type="text" id="name" placeholder="Enter your name" name="name" required>
+          <span class="error" id="nameError"></span>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" name="email" required>
+          <span class="error" id="emailError"></span>
+
+          <label for="number">Number</label>
+          <input type="tel" id="number" placeholder="Enter your number" name="phone" required>
+          <span class="error" id="numberError"></span>
+
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Create a password" name="password" required>
+          <span class="error" id="passwordError"></span>
+
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" placeholder="Repeat your password" required>
+          <span class="error" id="confirmPasswordError"></span>
+
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+</body>
+</html>
